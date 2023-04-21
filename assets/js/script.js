@@ -11,6 +11,7 @@ $(function () {
 
   for(var i=0; i<9; i++) {
     var hour = Number(hours[i].substring(5,hours[i].length))//removes "hour-" from the hours array and turns into number
+    
     //compares the current hour with the hour of time block and sets class based on if it's less than, greater than, or equal to
     if (currentHour === hour) {
       $('#' + hours[i]).addClass("present");
